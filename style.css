@@ -1,5 +1,5 @@
 body{
-    background-color: pink;
+    background-color: rgb(223, 177, 185);
 }
 
 h1{
@@ -9,10 +9,10 @@ h1{
 }
 
 h2{
-    color: green;
+    color: rgb(29, 131, 29);
     font-size: 25px;
 }
 
 li{
-    color: red;
+    color: rgb(231, 21, 21);
 }
