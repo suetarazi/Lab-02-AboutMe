@@ -88,5 +88,32 @@ else{
     alert('Pleaes choose yes or no');
 }
 
+//Lab 03 - question 6 - guessing a number (too high vs too low)
+var travel = 35; 
+var guessNum = prompt('I love to travel! Can you guess how many countries I have visited?');
+var guessCount=1;
+
+while(guessCount<=4){
+    if(guessNum.parseInt()===travel){
+        alert('You are Correct!');
+        break;
+    }else if
+        (guessNum.parseInt()<travel){
+            alert('Too low!');
+            guessCount++;
+            guessNum = prompt('I love to travel! Can you guess how many countries I have visited?');
+        }else if
+            (guessNum.parseInt()>travel){
+                alert('Too high!');
+                guessCount++;
+                guessNum = prompt('I love to travel! Can you guess how many countries I have visited?');
+            }
+            alert('You are out of guesses! I have visited '  + travel + ' countries!');
+        }
+    
+
+
+
+
 alert('Thank you ' + name + ' for answering the questions! Now continue to the site to learn more about me.');
 
