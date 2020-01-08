@@ -87,3 +87,6 @@ else{
     //console.log('invalid input');
     alert('Pleaes choose yes or no');
 }
+
+alert('Thank you ' + name + ' for answering the questions! Now continue to the site to learn more about me.');
+
