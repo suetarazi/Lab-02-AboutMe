@@ -11,3 +11,5 @@ The following features are added to the code:
 1. console.logs added appropriately throughout the code
 1. CSS style updates added
 
+* Code updated via partner programming by **Carrington Beard** (driver) and **Sue Tarazi** (navigator)
+

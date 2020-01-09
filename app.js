@@ -5,6 +5,7 @@ alert('Hi ' + name + '! Please answer the following questions \'yes\' or \'no\''
 var score = 0;
 var questionCount = 0;
 
+function questionNum1(){
 var question1 = prompt('Question 1: I have lived in 8 countries.');
 questionCount++;
 
@@ -31,8 +32,11 @@ switch(question1.toLowerCase()){
     //console.log('invalid input')    
     alert('Please choose yes or no');
         break;
-}
+}};
 
+questionNum1();
+
+function questionNum2(){
 var question2 = prompt('Question 2: My undergraduate degree is in Biomedical Engineering.');
 questionCount++;
 
@@ -48,8 +52,10 @@ else if(question2.toLowerCase()==='no'||question2.toLowerCase()==='n'){
     else{
     //  console.log('invalid input');
        alert('Please choose yes or no');
-}
+}};
+questionNum2();
 
+function questionNum3(){
 var question3 = prompt('My favorite sport is volleyball.');
 questionCount++;
 
@@ -65,8 +71,11 @@ else if(question3.toLowerCase()==='no'||question3.toLowerCase()==='n'){
 else{
     //console.log('invalid input')
     alert('Please choose yes or no');
-}
+}};
 
+questionNum3();
+
+function questionNum4(){
 var question4 = prompt('My cat\'s name is Pinot.');
 questionCount++;
 
@@ -82,8 +91,11 @@ else if(question4.toLowerCase()==='no'||question4.toLowerCase()==='n'){
 else{
     //console.log('invalid input');
     alert('Please choose yes or no');
-}
+}};
 
+questionNum4();
+
+function questionNum5(){
 var question5 = prompt('I\'m a Mom of two boys.');
 questionCount++;
 
@@ -99,7 +111,9 @@ else if(question5.toLowerCase()==='no'||question5.toLowerCase()==='n'){
 else{
     //console.log('invalid input');
     alert('Pleaes choose yes or no');
-}
+}};
+
+questionNum5();
 
 
 
@@ -108,6 +122,7 @@ questionCount++;
 var travel = 35; 
 var guessCount=1;
 
+function questionNum6(){
 while(guessCount<=4){
     var guessNum = prompt('I love to travel! Can you guess how many countries I have visited?');
     if(guessNum==travel){
@@ -129,7 +144,8 @@ while(guessCount<=4){
              
             }
             
-        }
+        }};
+questionNum6();
     
 /*After max iterations, how to return 'hey, here's the right answer!':
 else if((guessCount=4) && (guessNum != travel)){
@@ -144,14 +160,15 @@ alert('35 countries is a lot to visit!');
 questionCount++;
 
 var visitedCountries = ['Spain', 'Turkey', 'Jordan', 'China', 'Australia', 'Nicaragua'];
-var modifiedVisitedCountries = [];
-for (var x=0; x<visitedCountries.length; x++){
-    modifiedVisitedCountries[x]=visitedCountries[x].toLowerCase();
-}
-console.log(modifiedVisitedCountries);
+// var modifiedVisitedCountries = [];
+// for (var x=0; x<visitedCountries.length; x++){
+    // modifiedVisitedCountries[x]=visitedCountries[x].toLowerCase();
+// }
+// console.log(modifiedVisitedCountries);
 
-var answered=false;
+// var answered=false;
 
+function questionNum7(){
 for(var i=1; i<=6; i++){ //attempt;
     var guessCountry = prompt('Can you guess one of the countries I have visited?');
 //    if(modifiedVisitedCountries.includes(guessCountry.toLowerCase)){
@@ -168,7 +185,8 @@ for(var i=1; i<=6; i++){ //attempt;
                         break;
                     }
                 }
-            }
+            }};
+questionNum7();
    // if(answered===true){
      //   ;
     //}
