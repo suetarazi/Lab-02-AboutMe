@@ -2,7 +2,7 @@
 
 var name = prompt('What is your name?');
 alert('Hi ' + name + '! Please answer the following questions \'yes\' or \'no\'');
-
+/*
 var question1 = prompt('Question 1: I have lived in 8 countries.');
 
 switch(question1.toLowerCase()){
@@ -87,33 +87,70 @@ else{
     //console.log('invalid input');
     alert('Pleaes choose yes or no');
 }
+*/
 
+/*
 //Lab 03 - question 6 - guessing a number (too high vs too low)
 var travel = 35; 
-var guessNum = prompt('I love to travel! Can you guess how many countries I have visited?');
 var guessCount=1;
 
 while(guessCount<=4){
-    if(guessNum.parseInt()===travel){
+    var guessNum = prompt('I love to travel! Can you guess how many countries I have visited?');
+    if(guessNum==travel){
         alert('You are Correct!');
         break;
     }else if
-        (guessNum.parseInt()<travel){
+        (guessNum<travel){
             alert('Too low!');
             guessCount++;
-            guessNum = prompt('I love to travel! Can you guess how many countries I have visited?');
+            
         }else if
-            (guessNum.parseInt()>travel){
+            (guessNum>travel){
                 alert('Too high!');
                 guessCount++;
-                guessNum = prompt('I love to travel! Can you guess how many countries I have visited?');
+             
             }
-            alert('You are out of guesses! I have visited '  + travel + ' countries!');
+            
         }
     
+/*After max iterations, how to return 'hey, here's the right answer!':
+else if((guessCount=4) && (guessNum != travel)){
+    alert('The correct answer is 35.');
+}
+*/
+
+alert('35 countries is a lot to visit! Thank you ' + name + ' for answering the questions! Now continue to the site to learn more about me.');
 
 
+//Lab 03 - question 7 - guessing a string within in array
+
+var visitedCountries = ['Spain', 'Turkey', 'Jordan', 'China', 'Australia', 'Nicaragua'];
+var modifiedVisitedCountries = [];
+for (var x=0; x<visitedCountries.length; x++){
+    modifiedVisitedCountries[x]=visitedCountries[x].toLowerCase();
+}
+console.log(modifiedVisitedCountries);
+
+var answered=false;
+
+for(var i=1; i<=6; i++){ //attempt;
+    var guessCountry = prompt('Can you guess one of the countries I have visited?');
+//    if(modifiedVisitedCountries.includes(guessCountry.toLowerCase)){
+        for(var j=0; j<5; j++){   //iterate through array 
+                if(guessCountry.toLowerCase()===visitedCountries[j].toLowerCase()){//compare conditions
+                        alert('You guessed right!');
+                        i=7;
+                        break;
+                    }
+                    else{
+                        alert('Sorry, no!');
+                    }
+                }
+            }
+   // if(answered===true){
+     //   ;
+    //}
 
 
-alert('Thank you ' + name + ' for answering the questions! Now continue to the site to learn more about me.');
-
+alert('Some of the countries I have visited are: Spain, Turkey, Jordan, China, Australia, Nicaragua');
+                
