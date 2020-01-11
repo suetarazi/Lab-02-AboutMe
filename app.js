@@ -159,23 +159,15 @@ alert('35 countries is a lot to visit!');
 //Lab 03 - question 7 - guessing a string within in array
 questionCount++;
 
-var visitedCountries = ['Spain', 'Turkey', 'Jordan', 'China', 'Australia', 'Nicaragua'];
-// var modifiedVisitedCountries = [];
-// for (var x=0; x<visitedCountries.length; x++){
-    // modifiedVisitedCountries[x]=visitedCountries[x].toLowerCase();
-// }
-// console.log(modifiedVisitedCountries);
-
-// var answered=false;
 
 function questionNum7(){
+    var visitedCountries = ['Spain', 'Turkey', 'Jordan', 'China', 'Australia', 'Nicaragua'];
 for(var i=1; i<=6; i++){ //attempt;
     var guessCountry = prompt('Can you guess one of the countries I have visited?');
-//    if(modifiedVisitedCountries.includes(guessCountry.toLowerCase)){
         for(var j=0; j<5; j++){   //iterate through array 
-                if(guessCountry.toLowerCase()===visitedCountries[j].toLowerCase()){//compare conditions
+                if(guessCountry.toLowerCase()===visitedCountries[j].toLowerCase()){ //compare conditions
                         alert('You guessed right!');
-                        //console.log('right');
+                        
                         score++;
                         i=7;
                         break;
@@ -187,9 +179,7 @@ for(var i=1; i<=6; i++){ //attempt;
                 }
             }};
 questionNum7();
-   // if(answered===true){
-     //   ;
-    //}
+   
 
 
 alert('Some of the countries I have visited are: Spain, Turkey, Jordan, China, Australia, Nicaragua');
