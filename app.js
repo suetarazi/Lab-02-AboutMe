@@ -11,25 +11,20 @@ questionCount++;
 
 switch(question1.toLowerCase()){
     case 'no':
-    //console.log('correct');    
     alert('You are correct!');
     score++;
         break;
     case 'n':
-    //console.log('correct');    
     alert ('You are correct!');
     score++;    
     break;
-    case 'yes':
-    //console.log('wrong');    
+    case 'yes':  
     alert('Sorry, no!');
         break;
-    case 'y':
-    //console.log('wrong');    
+    case 'y': 
     alert('Sorry, no!');
         break;
     default: 
-    //console.log('invalid input')    
     alert('Please choose yes or no');
         break;
 }};
@@ -41,16 +36,16 @@ var question2 = prompt('Question 2: My undergraduate degree is in Biomedical Eng
 questionCount++;
 
 if(question2.toLowerCase()==='yes'||question2.toLowerCase()==='y'){
-    //console.log('correct');
+    
     alert('You are correct!');
     score++;
 }
 else if(question2.toLowerCase()==='no'||question2.toLowerCase()==='n'){
-    //console.log('wrong');  
+      
     alert('No, sorry!');
 }
     else{
-    //  console.log('invalid input');
+   
        alert('Please choose yes or no');
 }};
 questionNum2();
@@ -60,16 +55,16 @@ var question3 = prompt('My favorite sport is volleyball.');
 questionCount++;
 
 if(question3.toLowerCase()==='yes'||question3.toLowerCase()==='y'){
-    //console.log('wrong');
+   
     alert('No, sorry!');
 }
 else if(question3.toLowerCase()==='no'||question3.toLowerCase()==='n'){
-    //console.log('correct');
+   
     alert('You are correct!');
     score++;
 }
 else{
-    //console.log('invalid input')
+   
     alert('Please choose yes or no');
 }};
 
@@ -80,16 +75,16 @@ var question4 = prompt('My cat\'s name is Pinot.');
 questionCount++;
 
 if(question4.toLowerCase()==='yes'||question4.toLowerCase()==='y'){
-    //console.log('correct');
+   
     alert('You are correct!');
     score++;
 }
 else if(question4.toLowerCase()==='no'||question4.toLowerCase()==='n'){
-    //console.log('wrong');
+   
     alert('No, sorry!');
 }
 else{
-    //console.log('invalid input');
+   
     alert('Please choose yes or no');
 }};
 
@@ -100,16 +95,16 @@ var question5 = prompt('I\'m a Mom of two boys.');
 questionCount++;
 
 if(question5.toLowerCase()==='yes'||question5.toLowerCase()==='y'){
-    //console.log('correct);
+   
     alert('You are correct!');
     score++;
 }
 else if(question5.toLowerCase()==='no'||question5.toLowerCase()==='n'){
-    //console.log('wrong');
+   
     alert('No, sorry!');
 }
 else{
-    //console.log('invalid input');
+   
     alert('Pleaes choose yes or no');
 }};
 
@@ -129,17 +124,17 @@ while(guessCount<=4){
         alert('You are Correct!');
         score++;
         break;
-        //console.log('right');
+   
     }else if
         (guessNum<travel){
             alert('Too low!');
-            //console.log('low');
+   
             guessCount++;
             
         }else if
             (guessNum>travel){
                 alert('Too high!');
-                //console.log('high');
+   
                 guessCount++;
              
             }
@@ -147,12 +142,6 @@ while(guessCount<=4){
         }};
 questionNum6();
     
-/*After max iterations, how to return 'hey, here's the right answer!':
-else if((guessCount=4) && (guessNum != travel)){
-    alert('The correct answer is 35.');
-}
-*/
-
 alert('35 countries is a lot to visit!');  
 
 
