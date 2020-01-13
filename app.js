@@ -150,10 +150,12 @@ questionCount++;
 
 
 function questionNum7(){
-    var visitedCountries = ['Spain', 'Turkey', 'Jordan', 'China', 'Australia', 'Nicaragua'];
-for(var i=1; i<=6; i++){ //attempt;
-    var guessCountry = prompt('Can you guess one of the countries I have visited?');
-        for(var j=0; j<5; j++){   //iterate through array 
+    var i=0;
+    while(i<6){
+        // for(var i=1; i<=6; i++){ //attempt;
+        var visitedCountries = ['Spain', 'Turkey', 'Jordan', 'China', 'Australia', 'Nicaragua'];
+        var guessCountry = prompt('Can you guess one of the countries I have visited?');
+        for(var j=0; j<visitedCountries.length; j++){   //iterate through array 
                 if(guessCountry.toLowerCase()===visitedCountries[j].toLowerCase()){ //compare conditions
                         alert('You guessed right!');
                         
@@ -166,6 +168,7 @@ for(var i=1; i<=6; i++){ //attempt;
                         break;
                     }
                 }
+            i++;    
             }};
 questionNum7();
    
