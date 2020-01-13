@@ -15,8 +15,12 @@ h1{
 }
 
 
-div (SueBio){
-    color: 255, 247, 251;
+#SueBio{
+    background: rgb(255, 247, 251);
+    width: 80%;
+    margin: auto;
+    padding: 50px; 
+    color: #424242;
             }
 
 h2{
